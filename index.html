@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <title>Personal Portfolio</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <a href="#home" class="logo">Niriya</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#cheatsheet">Cheat sheet</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="home-img">
+            <img src="Images//Profile Pic.jpeg" alt="Profile Image">
+        </div>
+        <div class="home-content">
+            <h3>Hello, Myself</h3>
+            <h1>Niriya</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>Building digital dreams with lines of precision,  
+                Shaping the future through code and vision.</p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/niriya" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/Niriya03" target="_blank"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.instagram.com/_niriya___/" target="_blank"><i class='bx bxl-instagram' ></i></a>
+            </div>
+        </div>  
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span> </h2>
+            <p>Hi there! I’m a software development student at Bow Valley College, building skills in C++, C#, HTML, CSS, JavaScript, and SQL. With a diploma in Computer Applications, I have a solid tech foundation and a passion for problem-solving.
+
+                Previously, I worked as an IELTS trainer, honing my communication, teamwork, and attention to detail—skills I’m eager to bring into the software development field. I’m a quick learner, a team player, and always ready to tackle new challenges.</p>
+            <a href="https://www.linkedin.com/in/niriya" target="_blank" class="btn">Read more</a>
+        </div>
+        <div class="about-img">
+            <img src="Images/About Me.jpeg" alt="">
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="hobbies">
+        <h2 class="heading">My <span>Hobbies</span></h2>
+
+        <div class="hobbies-container">
+            <!-- Reading Books -->
+            <div class="hobby-box">
+                <i class='bx bx-book'></i> 
+                <h3>Reading Books</h3>
+                <p>Books have always been my escape. Whether it’s a gripping work of fiction or a thought-provoking non-fiction piece, there’s something magical about getting lost in a good story. Reading not only expands my knowledge but also sparks creativity and new ideas.</p>
+            <div class="hidden-content" style="display: none;">
+                <p>Recently, I’ve started sharing my thoughts on books over at <a href="https://onlinebookclub.org" target="_blank" class="link">OnlineBookClub</a>. I’ve reviewed one book so far and I’m excited to share my thoughts on many more in the future!</p>
+            </div>
+            <a class="btn" onclick="toggleContent(this)">Read More</a> 
+            </div>
+
+            <!-- Drawing -->
+            <div class="hobby-box">
+                <i class='bx bx-paint'></i> 
+                <h3>Drawing</h3>
+                <p>Drawing is my creative outlet, a way for me to unwind and let my thoughts flow onto paper. I find peace in sketching, especially when it’s a pencil drawing that focuses on intricate details and shading.</p>
+                <div class="hidden-content" style="display: none;">
+                    <p>While pencil drawing is my first love, I occasionally dip my brushes into paint, bringing a splash of color to my sketches. It’s a fun way to experiment and express myself visually.</p>
+                </div>
+                <a class="btn" onclick="toggleContent(this)">Read More</a>
+            </div>
+
+            <!-- Singing -->
+            <div class="hobby-box">
+                 <i class='bx bx-microphone'></i> 
+                <h3>Singing</h3>
+                <p>Singing has always been close to my heart. Whether I’m humming along to a melody or performing, music connects me with my emotions and provides a sense of relaxation and joy.</p>
+                <div class="hidden-content" style="display: none;">
+                    <p>I enjoy a wide range of musical genres—from classical and jazz to pop. During my school years, I had the honor of performing religious shabads of Sikhism, a deeply meaningful experience that has stayed with me. It was a unique way to express spirituality through music.</p>
+                </div>
+                 <a class="btn" onclick="toggleContent(this)">Read More</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Cheat Sheet Section -->
+    <section id="cheatsheet" class="cheatsheet">
+        <div class="cheatsheet-container">
+        <h2 class="heading">Cheat Sheets</h2>
+        
+            <div class="wrapper">
+                <!-- HTML Cheat Sheet -->
+                <div class="cheatsheet-item ">
+                    <h3>HTML Cheat Sheet</h3>
+                    <ul>
+                        <li><strong>&lt;section&gt;</strong> - Defines a section in a webpage, usually with related content, like a group of articles or a blog post.</li>
+                        <li><strong>&lt;div&gt;</strong> - A generic container element used to group content together, often used for styling or layout.</li>
+                        <li><strong>&lt;h1&gt; to &lt;h6&gt;</strong> - HTML heading tags, with &lt;h1&gt; as the main heading (largest) and &lt;h6&gt; as the smallest.</li>
+                        <li><strong>&lt;img&gt;</strong> - Used to embed images on a webpage, where the "src" attribute defines the image source, and "alt" provides alternative text.</li>
+                        <li><strong>&lt;p&gt;</strong> - Defines a paragraph of text.</li>
+                        <li><strong>&lt;a href=""&gt;</strong> - Creates hyperlinks to other web pages or external resources, with the "href" attribute specifying the destination URL.</li>
+                        <li><strong>&lt;ul&gt;</strong> - Creates an unordered list, typically with bullet points.</li>
+                        <li><strong>&lt;ol&gt;</strong> - Creates an ordered (numbered) list, where each list item is automatically numbered.</li>
+                        <li><strong>&lt;li&gt;</strong> - Represents a list item within an ordered or unordered list.</li>
+                        <li><strong>&lt;table&gt;</strong> - Defines a table for displaying tabular data, such as rows and columns.</li>
+                        <li><strong>&lt;form&gt;</strong> - Defines a form to collect user input, containing various form elements like text fields, checkboxes, etc.</li>
+                        <li><strong>&lt;input&gt;</strong> - Creates input fields in a form for users to enter data, such as text, numbers, or passwords.</li>
+                        <li><strong>&lt;button&gt;</strong> - Defines a clickable button that can trigger actions like form submission or navigation.</li>
+                        <li><strong>&lt;iframe&gt;</strong> - Embeds an external web page within the current page.</li>
+                        <li><strong>&lt;video&gt;</strong> - Embeds a video on the webpage, with the ability to play, pause, and control playback.</li>
+                    </ul>
+                </div>
+
+                <!-- CSS Cheat Sheet -->
+                <div class="cheatsheet-item ">
+                    <h3>CSS Cheat Sheet</h3>
+                    <ul>
+                        <li><strong>color:</strong> Sets the color of text content, allowing you to specify the color using names, hex, or RGB values.</li>
+                        <li><strong>background-color:</strong> Specifies the background color of an element, like a webpage or a container.</li>
+                        <li><strong>font-size:</strong> Defines the size of text. You can use units like pixels (px), em, rem, or percentages.</li>
+                        <li><strong>font-family:</strong> Specifies which font to apply to an element, enabling a wide range of typefaces and styles.</li>
+                        <li><strong>margin:</strong> Creates space outside an element, separating it from surrounding content.</li>
+                        <li><strong>padding:</strong> Adds space inside an element, between its content and its border.</li>
+                        <li><strong>border:</strong> Creates a boundary around an element, specifying width, style (solid, dashed), and color.</li>
+                        <li><strong>display:</strong> Defines the layout behavior of an element, such as block, inline, flex, or grid.</li>
+                        <li><strong>position:</strong> Positions an element relative to its normal position or another element, with values like static, relative, absolute, or fixed.</li>
+                        <li><strong>box-shadow:</strong> Adds a shadow effect to elements, with options for horizontal and vertical offset, blur radius, and color.</li>
+                        <li><strong>z-index:</strong> Controls the stacking order of elements. Higher values bring elements to the front, while lower values push them behind.</li>
+                        <li><strong>overflow:</strong> Manages content that overflows an element's box, with options like visible, hidden, or scroll.</li>
+                        <li><strong>height:</strong> Specifies the height of an element. This can be set in units like px, em, or percentages.</li>
+                        <li><strong>width:</strong> Specifies the width of an element. Like height, it can use px, em, percentages, and more.</li>
+                        <li><strong>hover:</strong> A pseudo-class that applies styles when a user hovers over an element with their mouse.</li>
+                    </ul>
+                </div>
+    
+                <!-- JavaScript Cheat Sheet -->
+                <div class="cheatsheet-item ">
+                    <h3>JavaScript Cheat Sheet</h3>
+                    <ul>
+                        <li><strong>let/const:</strong> Declare variables in JavaScript. Use "let" for variables that can change and "const" for constants that shouldn't be reassigned.</li>
+                        <li><strong>document.querySelector:</strong> Selects the first element that matches a CSS selector, like an ID or class.</li>
+                        <li><strong>addEventListener:</strong> Attaches an event handler to an element, such as a click or keypress event.</li>
+                        <li><strong>forEach:</strong> A method that iterates over each element in an array, executing a function for each item.</li>
+                        <li><strong>if/else:</strong> Conditional statements that execute different code based on whether a condition is true or false.</li>
+                        <li><strong>function:</strong> Defines reusable blocks of code that can be called with arguments to perform specific tasks.</li>
+                        <li><strong>setTimeout:</strong> Executes a function after a specified delay (in milliseconds), commonly used for timed actions.</li>
+                        <li><strong>console.log:</strong> A method used to print messages to the console, mainly for debugging purposes.</li>
+                        <li><strong>innerHTML:</strong> Used to get or set the HTML content inside an element, such as a paragraph or div.</li>
+                        <li><strong>JSON.stringify/parse:</strong> Converts JavaScript objects to JSON format (stringify) and parses JSON strings into objects (parse).</li>
+                        <li><strong>parseInt/parseFloat:</strong> Functions that convert a string into an integer or floating-point number.</li>
+                        <li><strong>Array.prototype.map:</strong> Creates a new array by applying a function to each item in the original array.</li>
+                        <li><strong>setInterval:</strong> Calls a function repeatedly at specified intervals (in milliseconds), useful for animations or periodic tasks.</li>
+                        <li><strong>Math.random:</strong> Generates a pseudo-random number between 0 (inclusive) and 1 (exclusive), useful for random operations.</li>
+                        <li><strong>this:</strong> Refers to the current context of an object or function, often used within methods or event listeners.</li>
+                    </ul>
+                </div>
+           </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="mailto: niriya763@gmail.com" method="POST" enctype="text/plain" name="contact-form">
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Full Name">
+                <input type="email" name="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" name="number" placeholder="Phone Number">
+                <input type="text" name="subject" placeholder="Email Subject">
+            </div>
+
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/niriya" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/Niriya03" target="_blank"><i class='bx bxl-github' ></i></a>
+            <a href="https://www.instagram.com/_niriya___/" target="_blank"><i class='bx bxl-instagram' ></i></a>
+        </div>
+
+        <p class="copyright"> © Niriya - All Rights Reserved</p>
+    </footer>
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
